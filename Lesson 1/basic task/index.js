@@ -13,4 +13,4 @@ var appData = {
     savings: false
 };
 var oneDayBudget = ((Number(money) - Number(priceOf))/30);
-alert(oneDayBudget);
+alert('Ваш бюджет на месяц: ' + oneDayBudget);

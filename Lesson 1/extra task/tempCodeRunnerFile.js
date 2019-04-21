@@ -1,4 +1,3 @@
-var num=33721;
 var x=num%10;
 var y=1;
 while (num>0) {
@@ -8,5 +7,3 @@ while (num>0) {
       alert(y);
 }
 pow(y, 3);
-
-
