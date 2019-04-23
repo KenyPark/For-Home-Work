@@ -16,7 +16,7 @@ let money = +prompt('Ваш бюджет на месяц?'),
 
 appData.expenses[oblExpens] = priceOf;
 appData.expenses[oblExpens1] = priceOf1;
-alert('Ваш бюджет на месяц: ' + ((money - (priceOf + priceOf))/30));
+alert('Ваш бюджет на месяц: ' + ((money - (priceOf + priceOf1))/30));
 
 
 
