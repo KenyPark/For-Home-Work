@@ -1,10 +1,10 @@
-'usу strict'
-let money = prompt('Ваш бюджет на месяц?'),
+'use strict';
+let money = +prompt('Ваш бюджет на месяц?'),
     time = prompt('Введите дату в формате:', 'YYYY-MM-DD'),
     oblExpens = prompt('Введите обязательную статью расходов:'),
-    priceOf = prompt('Во сколько она обойдётся?'),
+    priceOf = +prompt('Во сколько она обойдётся?'),
     oblExpens1 = prompt('Введите обязательную статью расходов:'),
-    priceOf1 = prompt('Во сколько она обойдётся?'),
+    priceOf1 = +prompt('Во сколько она обойдётся?'),
     appData = {
         budget: money,
         timeData: time,
@@ -14,10 +14,9 @@ let money = prompt('Ваш бюджет на месяц?'),
         savings: false
 };
 
-appData.expenses.oblExpens = priceOf;
-appData.expenses.oblExpens1 = priceOf1;
-let oneDayBudget = ((Number(money) - (Number(priceOf) + Number(priceOf1)))/30);
-alert('Ваш бюджет на месяц: ' + oneDayBudget);
+appData.expenses[oblExpens] = priceOf;
+appData.expenses[oblExpens1] = priceOf1;
+alert('Ваш бюджет на месяц: ' + ((money - (priceOf + priceOf))/30));
 
 
 
