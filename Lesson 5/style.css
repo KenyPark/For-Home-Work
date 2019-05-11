@@ -1,0 +1,64 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: table-caption;
+}
+button {
+    height: 25px;
+    width: 70px;
+    border-radius: 10px;
+    margin: 1%;
+    background-color: black;
+    color: white;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    background: blue;
+    display: block;
+    margin: 1%;
+    border-radius: 100%;
+}
+.heart {
+    position: relative;
+    width: 30px;
+    height: 50px;
+    background-color: red;
+    display: inline-block;
+    box-shadow: -1px 0px 2px #444;
+  /* Скругляем верхние углы */    
+    -webkit-border-radius: 50px 50px 0 0;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+  /* Определяем угол наклона */    
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    transform: rotate(315deg);
+    display: inline-block;
+  }
+  /* Формируем правую часть */
+  .heart:before {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background-color: red;
+    box-shadow: 0px 3px 3px #444444; 
+    -webkit-border-radius: 50px 50px 0 0;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 0 50px 50px 0;
+  }
+  div {
+    margin: 2% 2%;
+  }
+  .black {
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    display: table-caption;
+  }
