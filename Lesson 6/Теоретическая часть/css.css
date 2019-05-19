@@ -1,0 +1,12 @@
+button {
+    background-color: green;
+    height: 10%;
+    width: 10%;
+    border-radius: 25%;
+    color: white;
+    box-shadow: 3px 2px black;
+}
+a {
+    display: block;
+    margin: 2%;
+}
